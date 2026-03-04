@@ -6,7 +6,7 @@ from pages.base_page import BasePage
 
 
 class BoardPage(BasePage):
-    CREATE_BOARD_BUTTON = (By.CSS_SELECTOR, '[data-qa="dashboard-create-board-button"]')
+    CREATE_BOARD_BUTTON = (By.CSS_SELECTOR, get_data_qa('dashboard-create-board-button'))
 
     def __init__(self, driver):
         self.driver: WebDriver = driver
